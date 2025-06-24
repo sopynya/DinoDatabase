@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color:#b9e6fa">
+<head>
+    <style>
+        body {
+            overflow: hidden;
+        }
+        #space {
+            padding: 19%;
+            z-index: 1;
+        }
+        button {
+            
+            font-size:60px;
+            border: none;
+            border-radius: 20px;
+            text-align: center;
+            padding: 5px 20px 5px 20px;
+            width: 500px;
+            margin: auto;
+            display: block;
+            font-family: "Lucida Console", verdana, monospace;
+            font-weight: 200;
+            color: #8d8d8d;
+            transition: 0.4s;
+            background-color: white;
+        }
+        button:hover {
+            background-color: #84cae8;
+            color: white;
+            box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.112), 0 15px 50px 0 rgba(0, 0, 0, 0.127);
+        }
+
+        .background-rain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .triceratops {
+            position: absolute;
+            width: 140px;
+            top: -150px;
+            animation: fall-shake linear infinite;
+        }
+
+        @keyframes fall-shake {
+            0% {
+                transform: translate(0, 0);
+                opacity: 1;
+            }
+            25% {
+                transform: translate(-5px, 30vh);
+            }
+            50% {
+                transform: translate(5px, 60vh);
+            }
+            75% {
+                transform: translate(-3px, 90vh);
+            }
+            100% {
+                transform: translate(0, 120vh);
+                opacity: 0.4;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-rain" id="rain-container"></div>
+
+    <div id="space">
+        <button id="dinolist" onclick="location.href = 'dinossauroption.html'">Dinosaurs</button>
+        <br>
+        <button id="dinohist" onclick="location.href = 'dinohistory.html'">Dino history</button>
+    </div>
+
+    <script>
+        const imageURL = "https://images.vexels.com/media/users/3/342411/isolated/preview/a386521b2b36da95ef375d88905e7244-dinossauro-triceratops-de-desenho-animado.png";
+        const container = document.getElementById("rain-container");
+
+        const NUM_DINOS = 17; 
+
+        for (let i = 0; i < NUM_DINOS; i++) {
+            const img = document.createElement("img");
+            img.src = imageURL;
+            img.className = "triceratops";
+            img.style.left = Math.random() * 100 + "vw";
+            img.style.animationDuration = (5 + Math.random() * 5) + "s";
+            img.style.animationDelay = (Math.random() * 5) + "s";
+            container.appendChild(img);
+        }
+      </script>
+</body>
+</html>
