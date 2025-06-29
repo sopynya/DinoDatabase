@@ -167,16 +167,20 @@
             }
             .filter {
                 font-size: 40px;
-                width: 170px;
-                height: 77px;
+                width: 180px;
+                height: 87px;
             }
             input[type=text] {
                 font-size: 40px;
                 height: 74px;
+                width: 500px;
             }
             li {
                flex-basis: calc(100% / 2);
                 margin: 0;
+            }
+            .baw {
+                width: 210;
             }
         }
     </style>
@@ -189,7 +193,7 @@
         <button  class = "filter" style="margin-left: 0.2%; border-top-left-radius: 10px; border-bottom-left-radius: 10px;" onclick="atoz();">A - Z</button>
         <button  class = "filter" onclick="filterclassbtn('Triassic');">Triassic</button>
         <button  class = "filter" onclick="filterclassbtn('Jurassic');">Jurassic</button>
-        <button  class="filter" style="border:none; width: 170px; border-top-right-radius: 10px; border-bottom-right-radius: 10px;" onclick="filterclassbtn('Cretaceous');">Cretaceous</button>
+        <button  class="filter baw" style="border:none; width: 170px; border-top-right-radius: 10px; border-bottom-right-radius: 10px;" onclick="filterclassbtn('Cretaceous');">Cretaceous</button>
     </div>
 
     <div id="notav" class="hidden">
