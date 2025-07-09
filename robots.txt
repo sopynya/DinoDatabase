@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dinodatabase.onrender.com/sitemap.xml
