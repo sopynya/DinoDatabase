@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color:#b9e6fa">
+<head>
+    <title>Dinosaur History - Dinosaur Database</title>
+    <meta name="description" content="Learn about the fascinating history and evolution of dinosaurs at Dinosaur Database." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="/dinohistory" />
+    <script>
+        if (window.location.pathname.endsWith('/dinohistory.html')) {
+            const newPath = window.location.pathname.replace('/dinohistory.html', '/dinohistory');
+            window.history.replaceState(null, '', newPath);
+        }
+    </script>
+<style>
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+    #loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #b9e6fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+    #loader img {
+        width: 1000px;
+        margin-top: -220px;
+        margin-left: -70px;
+        animation: flicker 1s infinite;
+    }
+    @keyframes flicker {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.4; }
+    }
+    .sidebyside {
+        margin: 20px;
+        display: flex;
+        align-items: flex-start;
+    }
+    img {
+        width: 400px;
+        border-radius: 20px;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+    .b {
+        width: 95%;
+        padding: 1px;
+        border-radius: 10px 10px 10px 10px;
+        background-color: #7eb5cd;
+        border: solid 3px #5794ae;
+    }
+    .b:hover {
+        outline: solid 2px #83afc2;
+        border-radius: 10px;
+    }
+    h2 {
+        text-align: center;
+        font-family: 'Arial';
+        font-weight: 600;
+        font-size: 28px; 
+        margin-bottom: 5px;
+        margin-top: 5px;
+        color:white;
+    }
+    p {
+        margin-top: 5px; 
+        text-align: left;
+        font-family: "Verdana";
+        font-size:19px;
+        font-weight:400;
+        color:white;
+    }
+    li {
+        list-style:none ;
+        margin-bottom: 30px;
+    }
+    #back {
+        font-size: 27px;
+        color:white;
+        margin: 10px;
+        margin-bottom:0px;
+        border: none;
+        outline: solid 2px #5794ae;;
+        border-radius: 6px;
+        background-color: #7eb5cd;
+        padding: 10px 15px 3px 15px;
+    }
+    #back:hover {
+        background-color:#5794ae;
+        border-radius: 6px;
+    }
+    .hid {display:none;}
+    #house {
+        width: 35px;
+        height: 30px;
+    }
+
+    @media (max-width: 1200px){
+        p {
+            font-size: 35px;
+        }
+        h2 {
+            font-size: 44px;
+        }
+        .sidebyside {
+            display: flex;
+            flex-direction: column;
+        }
+        #house {
+            width: 80px;
+            height: 70px;
+        }
+        img {
+            width: 800px;
+            border-radius: 20px;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <div id="loader">
+        <img loading="lazy" src="IMG_2115.PNG" alt="Loading..." />
+    </div>
+    
+    <button id="back" onclick="location.href='index.html'"><img loading="lazy" id="house" src="https://static.vecteezy.com/system/resources/thumbnails/048/301/781/small_2x/white-abstract-house-3d-christmas-high-design-with-windows-and-roof-png.png" ></button>
+    <h1 class="visually-hidden">The History of Dinosaurs</h1>
+    <div id="all" style="display: none;">
+        <ul id="textli">
+            <li><button class="b" style="border-radius: 50px 10px 10px 10px;" onclick="waddisplay()">
+                <div class="sidebyside">
+                    <div class="column">
+                        <img loading="lazy" alt="Tyrannosaurus skeleton" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Tyrannosaurus_rex_J1.jpg/1599px-Tyrannosaurus_rex_J1.jpg?20191108095053">
+                        <p style="margin:auto; margin-top:10px;">(Click to see more)</p>
+                    </div>
+                    <div class="column" style="margin-left: 35px;">
+                        <h2>What are dinosaurs?</h2>
+                        <p>
+                            Dinosaurs are reptile pre-historic animals that lived during the Mesozoic era which can be divided in 3 periods of time; 
+                            the Triassic, the Jurassic and the Cretaceous. <br>
+                            They came from the archosaurus and the dinosaurs can be divided in two main groups, the Saurischia and the Ornitischia. <br>
+                            All of them were terrestrial or semi-aquatic animals. Although some flying and aquatic reptiles existed, they were not dinosaurs.
+                        </p>
+                    </div> 
+                </div>
+
+                <div class="column">
+                    <div id="wad" class="hid" style="margin-left: 20px;">
+                        
+                        <p>
+                            For 150 million years, the biggest and more important animals were the dinosaurs. 
+                            Some were smaller than a chicken, others were as tall as a house. <br>
+                            The climate at that time was much warmer, dry, and the ocean levels were higher. 
+                            The lands were different and stayed very close to each other.
+                            It was called "Pangaea", a single supercontinent. 
+                            With time, the lands started to gradually move far from each other 
+                            making earth similar to what it looks like today.<br><br>
+                            All dinosaurs had long tails to help them with balance. 
+                            They also had multiple holes in their bones or air sacs to make them lighter. 
+                            Althought their big size they were relatively light for their size.<br>
+                            Some dinosaurs had feathers and it's speculated that some could fly in some way, but most of them were covered in scales.
+                        </p>
+                        <h2>The Saurischia and the Ornithischia</h2>
+                        <p>
+                            The division between the two groups is based on the hip's characteristics. <br>
+                            The Saurischia group contains dinosaurs with a hip bone similar to those of reptiles. <br>
+                            The Ornithischia group contains dinosaurs with a hip bone similar to those of birds. <br><br>
+                        </p>
+                        <p>
+                            All Ornithischians were herbivorous and had a type of beak at the front of the maxillae. 
+                            The Ornithischians were quite rare until the end of the Jurassic period, it was when they evolved and became more numerous. <br>
+                            Their pubis moved pointing behind and this would allow the digestive system to stay near their legs so the organs could be supported.<br> 
+                            The first Ornithischians were fabrosaurids. They lived in Africa, Asia, Europe and the Americas.
+                            Most of them were very small with half of a human size, and they were very fast. 
+                            They could walk on four legs, but, except for the Scutelosaurus, probably walked on two legs and used their "arms" to grab food. 
+                            The teeth was small, leaf-shaped and sharp. 
+                            The teeth were used to grasp food and cut into smaller sizes. 
+                            These small dinosaurs later evolved into different creatures of a variety of sizes. <br><br>
+                            Most Ornithischians herbivores could stand on two legs, while the Saurischian herbivores (sauropods) only walked on four legs.<br><br>
+                            The Saurischians include the huge herbivorous sauropods and the carnivorous theropods. <br>
+                            Saurischians first appeared in South America about 228 million years ago and rapidly spread across the world. 
+                            After that, approximately 210 million years ago, a small group of dinosaurs evolved in South Africa and became the herbivorous beaked Ornithischians. 
+                            Their digestive system also evolved to be bigger so more vegetative food could be stored and more nutrition be extracted. <br>
+                            The first Saurichians to appear were the theropods. 
+                            They had big heads, strong bites and sharp teeth. 
+                            The arms were strong enough to grab the prey and the legs usually had big claws.
+                        </p>
+                    </div>
+                </div>
+            </button></li>
+
+            <li><button class="b" onclick="medisplay()">
+                <div class="sidebyside">
+                    <div class="column">
+                        <img loading="lazy" alt="Mesozoic map" src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Triassic_250.png?20200521232348">
+                        <p style="margin:auto; margin-top:10px;">(Click to see more)</p>
+                    </div>
+                    <div class="column" style="margin-left: 35px;">
+                        <h2>The earth during the Mesozoic era</h2>
+                        <p>
+                            The Mesozoic era started about 250 million years ago and ended about 65 million years ago. <br>
+                            It followed the largest mass extinction in Earth's history (the Permian-Triassic extinction) and ended with another mass extinction that wiped out the non-avian dinosaurs. <br>
+                            This era can be divided in three principal periods; the Triassic, Jurassic and Cretaceous.<br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div id="me" class="hid" style="margin-left: 20px;">
+                        <h2>The Triassic</h2>
+                        <p>
+                            The Triassic period lasted for 50 million years. 
+                            It began 250 million years ago and ended 200 million years ago. <br>
+                            There was a single supercontinent called pangaea.
+                            Since there was only one continent, there was only one ocean which was called Panthalassa.
+                        </p>
+                        <img loading="lazy" alt="Triassic map" src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Triassic_250.png?20200521232348">
+                        <p>
+                            The center of the Pangaea was a desert, it was very hot at summer and very cold at winter. 
+                            Only the most resistent and strong species could survive at these extreme conditions.<br><br>
+                            The ocean teemed with life, from the tiniest phytoplankton to massive marine reptiles like the Ichthyosaurus.<br><br>
+                            Before the Triassic, it was the Permian period. 
+                            The Permian period ended after a mass extinction event known as "Great Dying". 
+                            It was primarily caused by massive volcanic eruptions in Siberia, 
+                            known as the Siberian Traps, which released vast quantities of gases, 
+                            leading to significant climate change and ocean acidification. 
+                            This event, occurring about 250 million years ago, wiped out over 90% of marine species and 70% of terrestrial species. <br>
+                            Some scientists propose that the volcanic eruptions weakened the ozone layer, increasing harmful ultraviolet radiation 
+                            reaching the Earth's surface and contributing to the extinction of terrestrial life.<br><br>
+                            Around 200 million years ago, the Earth experienced a major extinction event that marked the end of the Triassic Period. 
+                            This extinction was likely caused by massive volcanic eruptions in an area known as the Central Atlantic Magmatic Province (CAMP). 
+                            These eruptions released huge amounts of carbon dioxide and other gases into the atmosphere, causing global warming, acid rain, and ocean acidification.<br>
+                            As a result, about 75% of all species on Earth went extinct. 
+                            Many early reptiles, large amphibians, and marine life forms disappeared. 
+                            However, some groups—like dinosaurs, early mammals, pterosaurs, and crocodile relatives—managed to survive.<br>
+                            With many competitors gone, dinosaurs rapidly evolved and became the dominant animals on land, leading into the Jurassic Period, the heart of the Age of Dinosaurs.
+                        </p>
+                        <br><br><br>
+
+                        <h2>The Jurassic</h2>
+                        <p>
+                            The Jurassic Period was the middle chapter of the Mesozoic Era, lasting from about 200 to 145 million years ago. It lasted 55 million years.
+                            It followed the mass extinction at the end of the Triassic and was a time of great growth, change, and dinosaur dominance.
+                        </p>
+                        <img loading="lazy" alt="Jurassic map" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Mollweide_Paleographic_Map_of_Earth%2C_170_Ma_%28Bajocian_Age%29.png/1600px-Mollweide_Paleographic_Map_of_Earth%2C_170_Ma_%28Bajocian_Age%29.png?20241112074804">
+                        <p>
+                            During the Jurassic, the supercontinent Pangaea began to split into two large landmasses: Laurasia in the north and Gondwana in the south. 
+                            This separation created new oceans and coastlines, leading to warmer, wetter climates with fewer deserts. 
+                            Lush forests, swamps, and river valleys spread across the land, providing ideal conditions for large plant-eating dinosaurs.<br><br>
+                            The Jurassic Period came to an end around 145 million years ago, but unlike other geological periods, it did not end with a mass extinction. 
+                            Instead, it faded gradually into the next era—the Cretaceous Period.
+                            During this time, the supercontinent Pangaea continued to break apart, creating new oceans and separating the continents into shapes more like what we see today. 
+                            This caused changes in sea levels, climate, and habitats across the globe. 
+                            While the overall climate remained warm, some areas became more seasonal and cooler.
+                            Although no sudden extinction occurred, the types of animals and plants on Earth slowly began to change. 
+                            Some groups of large dinosaurs, like certain long-necked sauropods, started to decline in some regions. 
+                            At the same time, new types of dinosaurs began to appear, including early forms of ceratopsians (horned dinosaurs) and hadrosaurs (duck-billed dinosaurs).
+                            One of the most important changes was the appearance of the first flowering plants (angiosperms) toward the very end of the Jurassic. 
+                            These would go on to transform ecosystems in the Cretaceous.
+                        </p>
+
+                        <br><br><br>
+
+                        <h2>The Cretaceous</h2>
+                        <p>
+                            The Cretaceous Period was the final period of the Mesozoic Era, lasting from about 145 to 66 million years ago. 
+                            It followed the Jurassic Period and ended with one of the most famous events in Earth’s history—the mass extinction that wiped out the non-avian dinosaurs.<br><br>
+                            During the Cretaceous, the Earth looked very different. The supercontinents had broken apart, and the continents were slowly moving toward the positions they hold today. 
+                            Shallow seas covered large areas of land, and the climate was warm and humid, with no ice at the poles.
+                        </p>
+                        <img loading="lazy" alt="Cretaceous map" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Mollweide_Paleographic_Map_of_Earth%2C_105_Ma_%28Albian_Age%29.png/1600px-Mollweide_Paleographic_Map_of_Earth%2C_105_Ma_%28Albian_Age%29.png?20241112074816">
+                        <p>
+                            This period saw a great explosion of life. Many well-known dinosaurs lived during the Cretaceous. <br>
+                            Flowering plants (angiosperms) first appeared and began to spread rapidly, changing plant life forever. 
+                            These plants attracted insects and helped develop more complex ecosystems.<br>
+                            In the skies, pterosaurs still flew, but birds were becoming more common and advanced. 
+                            In the oceans, large marine reptiles like mosasaurs and plesiosaurs ruled the waters, 
+                            along with many types of fish and ancient relatives of modern sea animals.<br><br>
+                            In the Cretaceous Period, sauropods in North America were no longer the dominant group of herbivorous dinosaurs with 
+                            the exception of Alamosaurus, with the ornithopod and ceratopsian dinosaurs, such as Edmontosaurus and Triceratops, 
+                            becoming the most abundant (this being most evident by the Late Cretaceous epoch). 
+                            However, on other landmasses such as South America and Africa 
+                            (which were island continents much like modern Australia) sauropods, in particular the titanosaurs, continued to be the dominant herbivores.<br><br>
+                            The Cretaceous Period ended about 66 million years ago with one of the most dramatic and well-known events in Earth's history: 
+                            a mass extinction that wiped out around 75% of all life on Earth, including all non-avian dinosaurs.<br>
+                            The most widely accepted cause of this extinction is a massive asteroid impact. 
+                            The asteroid, about 10 kilometers wide, struck the Earth in what is now the Yucatán Peninsula in Mexico, creating the Chicxulub Crater. 
+                            The impact caused enormous fires, earthquakes, and sent vast amounts of dust and debris into the atmosphere. 
+                            This blocked sunlight, cooled the Earth, and disrupted the global climate for years.<br>
+                            In addition to the asteroid, intense volcanic activity in a region called the Deccan Traps (in present-day India) may have also contributed to the extinction. 
+                            These eruptions released toxic gases and greenhouse gases, making Earth’s environment even more unstable.<br>
+                            All non-avian dinosaurs became extinct, large marine reptiles like mosasaurs and plesiosaurs disappeared, flying reptiles like pterosaurs vanished and many types of plants, insects, and ocean life also died out. 
+                            However, some life forms did survive, including: birds (the only surviving dinosaurs), small mammals, which later evolved and thrived, some reptiles, amphibians, and marine species.
+                        </p>
+                    </div>
+                </div>
+            </button></li>
+
+            <li><button class="b" onclick="">
+                <div class="sidebyside">
+                    <div class="column">
+                        <img loading="lazy" alt="Archaeopteryx fossil" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Archaeopteryx_fossil.jpg/1600px-Archaeopteryx_fossil.jpg?20141013214021">
+                    </div>
+                    <div class="column" style="margin-left: 35px;">
+                        <h2>How Dinosaurs Were Discovered</h2>
+                        <p>
+                            Dinosaurs have been extinct for millions of years, but their bones have told us their story. 
+                            The discovery of dinosaurs is one of the most exciting chapters in the history of science. 
+                            It began long before people even knew what dinosaurs were. <br>
+                            Dinosaurs were discovered through the gradual recognition and scientific study of fossils, 
+                            initially dismissed as belonging to other creatures or even mythical beings. <br>
+                            The first dinosaur to be scientifically named and described was Megalosaurus in 1824 by William Buckland. 
+                            Further discoveries and analysis by Gideon Mantell and Richard Owen led to the formal grouping of these ancient reptiles under the name Dinosauria in 1842.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    
+                </div>
+            </button></li>
+        </ul>
+    </div>
+</body>
+
+<script>
+    function waddisplay() {
+        var wad = document.getElementById("wad");
+        if (wad.style.display === "none") {
+            wad.style.display = "block";
+        } else {
+            wad.style.display = "none";
+        }
+    }
+    function medisplay() {
+        var me = document.getElementById("me");
+        if (me.style.display === "none") {
+            me.style.display = "block";
+        } else {
+            me.style.display = "none";
+        }
+    }
+    window.addEventListener("load", function () {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("all").style.display = "block";
+    });
+</script>
+</html>
