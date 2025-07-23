@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #caecfb;;">
+<head>
+    <title>Triceratops: Facts and Features of the Three-Horned Dinosaur</title>
+    <meta name="description" content="Discover everything about Triceratops, the iconic three-horned herbivorous dinosaur. Learn about its size, horns, frill, fossils, and how it lived in the Late Cretaceous.">
+    <meta name="keywords" content="Triceratops, three-horned dinosaur, ceratopsid, dinosaur facts, Triceratops fossils, Late Cretaceous herbivores, dinosaur frill, Triceratops behavior, dinosaur horns">
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://dinodatabase.onrender.com/Triceratops" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:500,700&family=Nunito:500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script>
+        if (window.location.pathname.endsWith('/Triceratops.html')) {
+            const newPath = window.location.pathname.replace('/Triceratops.html', '/Triceratops');
+            window.history.replaceState(null, '', newPath);
+        }
+    </script>
+    <style>
+        body {
+            margin:0;
+            padding: 0;
+        }
+        #divall {
+            background: linear-gradient(135deg,#4f849b 2%, #92bdd1 65%, #4f849b 100%);
+            display: flex;
+            flex-direction: column;
+            margin: 25px;
+            border-radius: 32px;
+            box-shadow: 0 16px 56px 0 rgba(112, 177, 205, 0.24), 0 6px 20px 0 rgba(112, 177, 205, 0.16);
+            border: 2.5px solid #84c0dc;
+            position: relative;
+            overflow: hidden;
+        }
+        #divall::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 28px;
+            border: 2px solid #e0f7fa;
+            pointer-events: none;
+            z-index: 1;
+        }
+        h1 {
+            font-family: 'Bebas neue','Arial Black', sans-serif;
+            font-weight: 300;
+            font-size: 39px;
+            color: white;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+        p {
+            font-family: 'Quicksand', 'Nunito', 'Consolas', monospace;
+            font-size: 21px;
+            font-weight: 500;
+            color: white;
+            margin: 0 10px 0 20px;
+            text-shadow: 0 2px 8px rgba(112, 177, 205, 0.13);
+        }
+        #back {
+            background-color: #4f849b;
+            border: none;
+            border-radius: 12px;
+            padding: 2.5px 0 0 0;
+            box-shadow: 0 2px 8px 0 rgba(112, 177, 205, 0.13);
+        }
+        .sidebyside {
+            margin: 20px;
+            display: flex;
+            align-items: flex-start;
+            background: linear-gradient(135deg,#4f849b 2%, #72a7c0 80%, #4f849b 100%);
+            border-radius: 28px;
+            box-shadow: 0 14px 44px 0 rgba(112, 177, 205, 0.24), 0 5px 16px 0 rgba(112, 177, 205, 0.16);
+            padding: 22px 22px 22px 22px;
+            position: relative;
+            overflow: hidden;
+        }
+        .sidebyside::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 22px;
+            box-shadow: inset 0 2px 18px 0 rgba(132, 202, 232, 0.10);
+            pointer-events: none;
+            z-index: 0;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+        }
+        #img1 {
+            width: 400px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .border {
+            height: 50px;
+            width: 100%;
+            border-top:solid 2px rgb(222,222,222); 
+            border-bottom: solid 2px rgb(222, 222, 222);
+            border-bottom-style: dashed;
+            border-top-style: dashed;
+            display: flex;
+            align-items: center;
+            padding: 0 70px; 
+        }
+        h2 {
+            font-family: 'Bebas neue','Arial Black', sans-serif;
+            font-weight: 300;
+            font-size: 39px;
+            color: white;
+            letter-spacing: 3px;
+        }
+        h3 {
+            margin-left: 35px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 28px;
+            font-family: 'Bebas neue','Arial Black', sans-serif;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 3px;
+        }
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #b9e6fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        #loader img {
+            width: 1000px;
+            margin-top: -220px;
+            margin-left: -70px;
+            animation: flicker 1s infinite;
+        }
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        #house {
+            width: 50px;
+            height: 45px;
+            margin: 0 5px 0 5px;
+        }
+        @media (max-width: 1200px) {
+            #divall {
+                margin: 8px;
+            }
+            .sidebyside {
+                flex-direction: column;
+                align-items: stretch;
+                padding: 12px 6vw 12px 6vw;
+            }
+            #img1 {
+                width: 100vw;
+                max-width: 550px;
+                margin: 0 auto 18px auto;
+                display: block;
+            }
+            h1, h2 {
+                font-size: 70px;
+            }
+            h3 {
+                font-size: 50px;
+            }
+            p {
+                font-size: 27px;
+            }
+            #house {
+                width: 80px;
+                height: 75px;
+                margin: 0 auto 10px auto ;
+            }
+            #back {
+                width: 95px;
+                height: 90px;
+                margin: 0 auto 10px auto ;
+            }
+            .border {
+                height: 75px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader">
+        <img src="IMG_2115.PNG" alt="Loading..." />
+    </div>
+
+    <div id="divall">
+        <div class="sidebyside">
+            <button id="back" onclick="history.back()"><img loading="lazy" id="house" src="https://static.vecteezy.com/system/resources/thumbnails/048/301/781/small_2x/white-abstract-house-3d-christmas-high-design-with-windows-and-roof-png.png" ></button>
+            <br>
+            <img alt="Triceratops skeleton" loading="lazy" id="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Fossil_Triceratops.jpg/1600px-Fossil_Triceratops.jpg?20250527202406">
+            <div class="column">
+                <h1>Triceratops</h1>
+                <p>
+                    <i>Triceratops</i> were herbivorous, quadrupedal dinosaurs from the Late Cretaceous period that lived about 66-68 million years ago in western North America. 
+                    The name Triceratops means 'three-horned face', which refers to the three horns the dinosaur has. 
+                    One horn near their beak and two on top of their head. 
+                    They also had a large crown-looking frill behind the head. <br>
+                    They are very large animals measuring around 8-9 meters in length and 3 meters in height. 
+                    A grown Triceratops can weight between 5.000 kg and 9.000 kg.
+                </p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="border">
+                <h2>Species</h2>
+            </div>
+            <h3>The species concept</h3>
+            <p>
+                The first fossil of a Triceratops was discovered in 1887 in Denver, 
+                Colorado, consisting of a pair of horns attached to a skull fragment. 
+                At first, paleontologists believed the remains belonged to a prehistoric bison. 
+                However, by 1888, it became clear that the fossil was from a dinosaur, and in 1889, 
+                the name Triceratops—meaning “three-horned face”—was officially given following the 
+                discovery of additional specimens. <br> <br>
+                Over time, paleontologists unearthed a wide variety of Triceratops fossils that showed subtle differences from one another. 
+                To make sense of these variations, researchers initially divided the specimens into two main groups. 
+                The first group included Triceratops horridus, Triceratops prorsus, and Triceratops brevicornus (“the short-horned”), 
+                which were characterized by larger skulls and smaller nasal horns. 
+                The second group consisted of Triceratops elatus and Triceratops calicornis, 
+                which had large brow horns and smaller nasal horns.<br>
+                Additional species such as Triceratops serratus and Triceratops flabellatus were also named, 
+                though they didn’t fit clearly into either group. Later, three more species were proposed: 
+                Triceratops obtusus and Triceratops hatcheri, both with very small nasal horns, 
+                and Triceratops eurycephalus, known for a particularly wide skull.<br><br>
+                By 1986, some paleontologists proposed that all these fossils might belong to a single species, 
+                Triceratops horridus. This theory was based partly on ecological reasoning—modern ecosystems usually 
+                support only one or two large herbivore species in a given region. 
+                Another hypothesis suggested that the differences between fossils were due to sexual 
+                dimorphism and age, with certain forms representing males, females, or older individuals. 
+                For example, T. hatcheri and T. obtusus were thought to be older males.<br>
+                However, further analysis led researchers to reject that explanation. 
+                Eventually, scientists concluded that only two species of Triceratops are valid: 
+                Triceratops horridus and Triceratops prorsus. 
+                Although Triceratops hatcheri had a noticeably different skull, it is not currently considered a valid species. 
+                Support for the two-species model also comes from the observation that T. horridus and T. prorsus did not live at the same time, 
+                strengthening the case for their distinction as separate species.
+            </p>
+
+            <h3 style="margin-left: 50px;">Questionable Species</h3>
+            <p>
+            Species based on fossils that are too poor or incomplete to determine if it's a new species or not
+            </p><br>
+            <p style="margin-left: 70px;">
+                - T. albertensis <br>
+                - T. alticornis <br> 
+                - T. eurycephalus <br> 
+                - T. galeus <br>
+                - T. hatcheri <br>
+                - T. ingens <br>
+                - T. maximus <br>
+                - T. mortuarius <br>
+                - T. sulcatus <br>
+                - T. sylvestris
+            </p>
+        
+        <h3>Torosaurus theory</h3>
+        <p>
+            In 2010, paleontologists John Scannella and Jack Horner proposed that Torosaurus might 
+            not be a separate genus at all, but rather the fully mature adult form of Triceratops. 
+            According to this theory, the differences in skull structure and frill size between the two 
+            were not due to species variation but to ontogeny—the natural changes that occur as an animal grows.<br>
+            The core of the hypothesis rests on skull development. 
+            Triceratops juveniles and subadults had solid, short frills, but as they aged, the frill would elongate, 
+            thin out, and develop large openings, resulting in what paleontologists had previously 
+            identified as Torosaurus. If true, this would make Torosaurus a growth stage of Triceratops, 
+            not a separate animal.<br><br>
+            However, the theory is still controversial. 
+            Some researchers point out that fossils of both dinosaurs appear in similar rock 
+            layers and time frames, which questions the age-based progression. 
+            Others argue that there are notable structural differences beyond the frill, 
+            such as skull shape and horn orientation, that suggest the two are indeed distinct species. 
+            Additionally, the small number of Torosaurus fossils makes it hard to confirm this growth transition with certainty.
+        </p><br><br>
+        <div class="border">
+            <h2 class="heads">Characteristics</h2>
+        </div>
+        <h3>Body</h3>
+        <p>
+            One of the most striking features of Triceratops was its enormous skull, 
+            which could measure up to 2.5 meters in length, making it one of the largest of any land animal. 
+            At the front of its head were three facial horns—two large ones above the eyes and a smaller one on the nose. 
+            These brow horns could reach up to 1 meter in length and were likely used for defense or display.<br><br>
+            The dinosaur also had a parrot-like beak and a complex dental arrangement behind it, 
+            suited for chewing tough plant material. It had between 400 and 800 teeth arranged in 36 to 40 vertical 
+            columns, with each column containing 3 to 5 teeth stacked on top of one another. 
+            These leaf-shaped, serrated teeth curved inward and were constantly replaced throughout the dinosaur’s life, 
+            which is estimated to have spanned 40 to 70 years.<br><br>
+            Skin impressions show that Triceratops had a covering of large, 
+            reptile-like scales, with the frill area consisting of small, polygonal scales. 
+            Although direct evidence of coloration is rare, scientists believe that Triceratops may have had camouflaging skin 
+            tones—possibly featuring greens, browns, and even bluish-black stripes or white markings. 
+            These patterns likely helped it blend into its environment and may have played a role in 
+            communication or mating displays.
+        </p>
+        <h3>Behaviour</h3>
+        <p >
+            It likely fed on a variety of low-growing vegetation, including fruits, seeds, twigs, roots, and leaves, 
+            using its sharp beak to pluck plants from the ground. 
+            This diet, along with its wide geographic range—from Texas to Montana—suggests it played 
+            a vital role in shaping its environment and may have even contributed to plant pollination.<br><br>
+            Triceratops is often imagined as a social, herding dinosaur, 
+            but fossil evidence for this is limited. 
+            Most Triceratops specimens have been found alone, and when discovered in groups, 
+            they usually consist of no more than three individuals. 
+            This has led scientists to believe that Triceratops was likely a mostly solitary animal, 
+            at least for much of its life.<br><br>
+            There are two major theories about the purpose of the horns and frill. 
+            One proposes that they were used in combat, 
+            especially against predators like T. rex. The other suggests they played a role in mating displays, 
+            helping individuals attract partners or assert dominance. 
+            Some researchers also believe the frill may have served a thermoregulatory function, 
+            helping the animal manage body temperature. 
+            In addition, these striking features likely contributed to visual communication and species 
+            recognition, helping individuals identify others of their kind.
+        </p><br><br>
+        <div class="border">
+            <h2>Classification</h2>
+        </div>
+        <h3></h3>
+        <p>
+            Triceratops are known to be from the genus Ceratopsidae of the family Ceratopsia, 
+            a group of herbivorous, beaked dinosaurs. They are from the group Ornithischian.
+            Over the years it's been debated if the Triceratops is a ceratopsid because of it's solid small frill, 
+            which is similar to the Centrosaurinae, and the long horns which are more akin to Chasmosaurinae. <br>
+            Some paleontologists hypothesis is that Triceratops are from the Centrosaurinae genus and not Ceratopsidae.
+            But late studies show that the only similarity with Centrosaurinae and Triceratops is the small frill. <br>
+            Others say Triceratops are from the genus Chasmosaurinae, which is the most acceptable theory this day.
+        </p><br><br>
+    </div>
+</div>
+</body>
+
+<script>
+    window.addEventListener("load", function () {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("divall").style.display = "flex";
+    });
+</script>
+</html>

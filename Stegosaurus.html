@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #caecfb;">
+<head>
+    <title>Ankylosaurus: Facts and Features of the Armored Dinosaur</title>
+    <meta name="description" content="Explore the Ankylosaurus — the heavily armored herbivorous dinosaur of the Late Cretaceous. Learn about its defense, tail club, armor plates, size, fossils, and lifestyle.">
+    <meta name="keywords" content="Ankylosaurus, armored dinosaur, Ankylosaurus facts, tail club, Ankylosaurus fossils, Late Cretaceous herbivores, dinosaur armor, Ankylosaurus behavior, dinosaur defense">
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://dinodatabase.onrender.com/Ankylosaurus" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:500,700&family=Nunito:500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script>
+        if (window.location.pathname.endsWith('/Stegosaurus.html')) {
+            const newPath = window.location.pathname.replace('/Stegosaurus.html', '/Stegosaurus');
+            window.history.replaceState(null, '', newPath);
+        }
+    </script>
+    <style>
+        body {
+            margin:0;
+            padding: 0;
+        }
+        #divall {
+            background: linear-gradient(135deg,#4f849b 2%, #92bdd1 65%, #4f849b 100%);
+            display: flex;
+            flex-direction: column;
+            margin: 25px;
+            border-radius: 32px;
+            box-shadow: 0 16px 56px 0 rgba(112, 177, 205, 0.24), 0 6px 20px 0 rgba(112, 177, 205, 0.16);
+            border: 2.5px solid #84c0dc;
+            position: relative;
+            overflow: hidden;
+        }
+        #divall::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 28px;
+            border: 2px solid #e0f7fa;
+            pointer-events: none;
+            z-index: 1;
+        }
+        h1 {
+            font-family: 'Bebas neue','Arial Black', sans-serif;
+            font-weight: 300;
+            font-size: 39px;
+            color: white;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+        p {
+            font-family: 'Quicksand', 'Nunito', 'Consolas', monospace;
+            font-size: 21px;
+            font-weight: 500;
+            color: white;
+            margin: 0 10px 0 20px;
+            text-shadow: 0 2px 8px rgba(112, 177, 205, 0.13);
+        }
+        #back {
+            background-color: #4f849b;
+            border: none;
+            border-radius: 12px;
+            padding: 2.5px 0 0 0;
+            box-shadow: 0 2px 8px 0 rgba(112, 177, 205, 0.13);
+        }
+        .sidebyside {
+            margin: 20px;
+            display: flex;
+            align-items: flex-start;
+            background: linear-gradient(135deg,#4f849b 2%, #72a7c0 80%, #4f849b 100%);
+            border-radius: 28px;
+            box-shadow: 0 14px 44px 0 rgba(112, 177, 205, 0.24), 0 5px 16px 0 rgba(112, 177, 205, 0.16);
+            padding: 22px 22px 22px 22px;
+            position: relative;
+            overflow: hidden;
+        }
+        .sidebyside::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 22px;
+            box-shadow: inset 0 2px 18px 0 rgba(132, 202, 232, 0.10);
+            pointer-events: none;
+            z-index: 0;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+        }
+        #img1 {
+            width: 400px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .border {
+            height: 50px;
+            width: 100%;
+            border-top:solid 2px rgb(222,222,222); 
+            border-bottom: solid 2px rgb(222, 222, 222);
+            border-bottom-style: dashed;
+            border-top-style: dashed;
+            display: flex;
+            align-items: center;
+            padding: 0 70px; 
+        }
+        h2 {
+            font-family: 'Bebas neue','Arial Black', sans-serif;
+            font-weight: 300;
+            font-size: 39px;
+            color: white;
+            letter-spacing: 3px;
+        }
+        h3 {
+            margin-left: 35px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 28px;
+            font-family: 'Bebas neue','Arial Black', sans-serif;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 3px;
+        }
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #b9e6fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        #loader img {
+            width: 1000px;
+            margin-top: -220px;
+            margin-left: -70px;
+            animation: flicker 1s infinite;
+        }
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        #house {
+            width: 50px;
+            height: 45px;
+            margin: 0 5px 0 5px;
+        }
+        @media (max-width: 1200px) {
+            #divall {
+                margin: 8px;
+            }
+            .sidebyside {
+                flex-direction: column;
+                align-items: stretch;
+                padding: 12px 6vw 12px 6vw;
+            }
+            #img1 {
+                width: 100vw;
+                max-width: 550px;
+                margin: 0 auto 18px auto;
+                display: block;
+            }
+            h1, h2 {
+                font-size: 70px;
+            }
+            h3 {
+                font-size: 50px;
+            }
+            p {
+                font-size: 27px;
+            }
+            #house {
+                width: 80px;
+                height: 75px;
+                margin: 0 auto 10px auto ;
+            }
+            #back {
+                width: 95px;
+                height: 90px;
+                margin: 0 auto 10px auto ;
+            }
+            .border {
+                height: 75px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader">
+        <img src="IMG_2115.PNG" alt="Loading..." />
+    </div>
+
+    <div id="divall">
+        <div class="sidebyside">
+            <button id="back" onclick="history.back()"><img id="house" src="https://static.vecteezy.com/system/resources/thumbnails/048/301/781/small_2x/white-abstract-house-3d-christmas-high-design-with-windows-and-roof-png.png" ></button>
+            <br>
+            <img alt="Stegosaurus skeleton" loading="lazy" id="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Stegosaurus_Skeleton_%2836329568742%29.jpg/1599px-Stegosaurus_Skeleton_%2836329568742%29.jpg?20210818011312">
+            <div class="column">
+                <h1>Stegosaurus</h1>
+                <p>
+                    The <i>Stegosaurus</i> are large, heavily built, herbivorous, quadrupedal, armoured dinosaurs from the Late Jurassic between 155 and 145 million years ago.
+                    They are characterized by the distinctive kite-shaped upright plates along their backs and spikes on their tails. <br>
+                    Fossils of the genus have been found in the western United States and in Portugal. <br>
+                    They are around 6 to 7,5 meters long, 3 to 4,5 meters tall and weighted around 3,500 kg.
+                </p>
+            </div>
+        </div>
+        
+        <div class="column">
+            <div class="border">
+                <h2>Species</h2>
+            </div>
+            <h3></h3>
+            <p>
+                The first known skeletons were fragmentary and the bones were scattered, and it would be many years before the true appearance of these animals, 
+                including their posture and plate arrangement, became well understood. <br> <br>
+                Many of the species initially described have since been considered to be invalid or synonymous with earlier named species, 
+                leaving two well-known and one poorly known species. 
+            </p>
+            <h3>Stegosaurus stenops</h3>
+            <p>
+                Stegosaurus stenops, meaning “narrow-faced roof lizard,” was first discovered in 1886 near 
+                Cañon City, Colorado. This species is the most famous of the Stegosaurus genus, largely 
+                because its fossils include at least one complete, articulated skeleton. 
+                Fossils have been uncovered in the Morrison Formation of Colorado, Wyoming, and Utah.<br>
+                Stegosaurus stenops is recognized for its proportionally large, broad plates and 
+                rounded tail spikes. Unlike other species, it was slightly shorter in body length. 
+                Fossil evidence shows its plates were arranged in a staggered, alternating double row 
+                along its back. To date, scientists have found remains of at least 50 individuals, 
+                including both adult and juvenile skeletons, along with a complete skull and several 
+                partial skulls.
+            </p>
+            <h3>Stegosaurus ungulatus</h3>
+            <p>
+                The name Stegosaurus ungulatus translates to “hoofed roof lizard.” 
+                This species was first discovered in 1879 at Como Bluff, Wyoming. 
+                Although distinct in some features, some paleontologists have suggested it might 
+                actually be synonymous with Stegosaurus stenops.<br>
+                Stegosaurus ungulatus was the largest known species of the genus, reaching lengths of up to 7 meters. 
+                It had longer hind limbs compared to other Stegosaurus species, smaller and more pointed plates 
+                with wide bases and narrow tips, and several small, spine-like plates near the base of the tail spikes. 
+                Interestingly, it appears to have possessed eight tail spikes, possibly arranged in four pairs. 
+                However, no single specimen has been found with a fully articulated set of spikes, and it’s possible 
+                that some of the spikes originally discovered together may have come from different individuals.
+            </p>
+            <h3>Stegosaurus sulcatus</h3>
+            <p>
+                Stegosaurus sulcatus, meaning “furrowed roof lizard,” was first described in 1887 from a partial skeleton. 
+                Initially considered a synonym of Stegosaurus stenops, 
+                later studies have argued that it is a distinct species.<br>
+                What sets Stegosaurus sulcatus apart is its unique spikes, which are unusually large, 
+                deeply grooved, and have very broad bases. 
+                One spike found with the type specimen was originally thought to be a tail spike, 
+                but its size suggests it may have come from the shoulder or hip region instead.<br>
+                While a 2008 review suggested S. sulcatus might not even belong to the Stegosaurus genus, 
+                later research supported its status as a valid species due to its distinctive spiked armor.
+            </p>
+
+            <h3>Doubtful species and synonyms</h3>
+            <p>
+                - Stegosaurus armatus, the first specimen to be described. 
+                However, the type specimen was very fragmentary because the type specimen is very fragmentary, 
+                it is extremely difficult to compare it with other species based on better specimens, and it is now generally considered to be a doubtful species. 
+                Because of this, it was replaced by S.<br> <br>
+                - Stegosaurus "affinis", it is only known from a pubis which has since been lost making it hard to know if it's a new different species. <br> <br>
+                - Diracodon laticeps, described by some jawbone fragments. <br> <br>
+                - Stegosaurus duplex. It was initially distinguished from Stegosaurus ungulatus based on the fact that each hip vertebra bore its own rib, which it's claimed that was unlike the anatomy of Stegosaurus ungulatus. 
+                It was suggested that Stegosaurus duplex may have lacked armor, since no plates or spikes were found with the specimen, 
+                though a single spike may actually have been present nearby, and re-examination of the site maps has shown that the entire specimen was found highly disarticulated and scattered. 
+                It is generally considered a synonym of Stegosaurus ungulatus today.
+            </p><br><br>
+            
+            <div class="border">
+                <h2>Characteristics</h2>
+            </div>
+            <h3>Body</h3>
+            <p>
+                Stegosaurus had a small, elongated skull that appeared narrow in proportion to its large body. 
+                Its front teeth were absent, replaced by a turtle-like horny beak that likely extended over both jaws. 
+                The lower jaw featured flat extensions that would have concealed the teeth from side view, suggesting the presence 
+                of a beak similar to some turtles. 
+                This extensive beak—unusual among ornithischians—might have also indicated the presence of soft cheeks in life.<br>
+                The teeth of Stegosaurus were small, triangular, and flat, showing 
+                wear patterns that suggest the dinosaur was capable of grinding its food.<br><br>
+                Despite its size, Stegosaurus had a remarkably small brain, roughly comparable to that of 
+                a modern dog. While this fueled outdated ideas about dinosaur intelligence, today it’s 
+                understood that brain size alone doesn't measure intelligence, 
+                and little is known about the detailed brain anatomy of Stegosaurus.<br><br>
+                The dinosaur’s tail was likely held off the ground, while its head stayed low, 
+                possibly no higher than one meter from the ground—suited for browsing low vegetation.<br><br>
+                One of its most iconic features was its distinctive double row of plates running along its back, 
+                numbering between 17 and 22. These plates weren’t connected to the skeleton but were embedded in the skin. 
+                The largest plates, found over the hips, could exceed 60 centimeters in both width and height.<br>
+                Studies suggest that plate arrangement may have varied between species and might have served functions like species recognition. 
+                Although many plates appeared similar, no two identical plates have been found on a single individual. 
+                Fossil skin impressions from related species, like Hesperosaurus, 
+                reveal that the plates had a smooth surface marked by long, shallow grooves.
+            </p>
+
+            <h3>Behaviour</h3>
+            <p>
+                Stegosaurus was a herbivore with a short neck and small head, 
+                most likely feeding on low-growing plants such as ferns, mosses, cycads, 
+                horsetails, and conifers. Its jaws and teeth were quite different from other 
+                herbivorous dinosaurs, adapted mainly for simple up-and-down (orthal) movements rather 
+                than complex chewing, which suggests it followed a distinct feeding strategy. 
+                Stegosaurus is generally considered a low-browser, consuming vegetation close to the ground.<br><br>
+                One of the most debated aspects of Stegosaurus behavior involves the function of 
+                its iconic plates and tail spikes. While its spiked tail—known as a thagomizer—is widely believed 
+                to have been used for defense against predators, the role of its plates remains uncertain. 
+                Some paleontologists suggest the plates served for display purposes, 
+                either for attracting mates or intimidating rivals, while others propose they played a 
+                role in thermoregulation by helping absorb heat from the sun. 
+                However, the theory of the plates being used for cooling has been questioned, 
+                especially since related species like Kentrosaurus had more spikes than plates, 
+                indicating that cooling may not have been the main purpose.<br>
+                Another hypothesis proposes that Stegosaurus could pump blood into its plates, 
+                making them flush with color as a form of threat display—a visual warning to potential predators. 
+                The fragility and placement of the plates have also led some to dismiss their use in defense, 
+                though one theory suggested Stegosaurus may have been able to shift its plates to better protect 
+                itself during confrontations.<br><br>
+                As for the tail spikes, evidence of trauma and fractures found 
+                on some fossils strongly suggests that they were indeed used in active defense rather than merely for display.<br><br>
+                Stegosaurus lived during the Late Jurassic in semi-arid environments marked by distinct wet and dry seasons, often in flat floodplain areas. 
+                The vegetation in its habitat varied from lush, forested riverbanks to open fern-dominated savannas.<br><br>
+                While it remains debated whether Stegosaurus was a solitary animal or lived in groups, 
+                some fossil evidence hints that they may have moved in small family units or even herds.
+            </p>
+
+            <h3>The second brain theory</h3>
+            <p>
+                For many years, Stegosaurus and other stegosaurs were believed to possess a so-called "second brain" 
+                located in their hips. This idea arose from the discovery of a large cavity in the hip 
+                region of the spinal cord—an opening spacious enough to hold a structure up to 20 times 
+                larger than Stegosaurus’s famously small brain.<br>
+                Scientists once theorized that this cavity housed a secondary brain-like organ responsible for 
+                controlling reflexes and movements in the rear half of the body, 
+                potentially giving the animal a temporary burst of energy or coordination when faced with predators. 
+                This notion became a popular explanation for how such a slow-moving animal with a tiny brain 
+                could survive in a world of dangerous predators.<br>
+                However, modern research has cast doubt on this theory. Similar structures are found in birds, 
+                where they contain the glycogen body—a mass whose exact function is still not 
+                fully understood but is believed to assist in glycogen storage or regulation within the nervous system.<br>
+                Today, most paleontologists agree that Stegosaurus did not have a second brain. 
+                Instead, the enlarged cavity likely served other biological functions unrelated 
+                to higher brain activity or defensive reflexes.
+            </p><br><br>
+            <div class="border">
+                <h2>Classification</h2>
+            </div>
+            <h3></h3>
+            <p>
+                Stegosaurus belongs to the dinosaur order Ornithischia, one of the two major groups of 
+                dinosaurs, characterized by a bird-like pelvic structure. 
+                Ornithischians were primarily herbivores and included a wide range of species such as 
+                ceratopsians, hadrosaurs, and ankylosaurs.<br>
+                Within Ornithischia, Stegosaurus is part of the family Stegosauridae, a group of armored dinosaurs 
+                known for their distinctive plates and spikes. Members of this family are recognized 
+                by their unique body armor, quadrupedal stance, and specialized tail spikes known as thagomizers.<br>
+                Stegosaurus also falls under the subfamily Stegosaurinae, a subgroup within Stegosauridae that includes 
+                the larger and more derived stegosaurids. These dinosaurs typically had larger plates and 
+                a more pronounced difference between the size of their front and hind limbs.<br>
+                All these groups are part of the broader clade Stegosauria, which encompasses all plated dinosaurs 
+                sharing a common ancestry. Stegosaurians first appeared in the Middle Jurassic and are known 
+                for their distinctive dermal armor, including plates and spikes used for defense, display, 
+                or thermoregulation.<br>
+                Stegosaurus, as one of the most iconic representatives of this group, 
+                exemplifies the defining traits of Stegosauria and stands out for 
+                its well-known double row of plates and spiked tail. Its classification reflects its 
+                evolutionary ties to a fascinating lineage of armored herbivorous dinosaurs that roamed 
+                the Jurassic landscapes.
+            </p>
+            <br> <br>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("load", function () {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("divall").style.display = "flex";
+        });
+    </script>
+</body>
+
+</html>

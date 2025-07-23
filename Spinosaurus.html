@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #caecfb;">
+<head>
+    <title>Spinosaurus: Facts about The Aquatic Predator of the Cretaceous</title>
+    <meta name="description" content="Explore the fascinating world of Spinosaurus — the massive sail-backed dinosaur believed to be the first aquatic predator. Learn about its body, habitat, and discoveries.">
+    <meta name="keywords" content="Spinosaurus, Spinosaurus aegyptiacus, aquatic dinosaur, sail dinosaur, Cretaceous predators, Spinosaurus facts, dinosaur fossils, North African dinosaurs">
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://dinodatabase.onrender.com/Spinosaurus" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:500,700&family=Nunito:500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script>
+        if (window.location.pathname.endsWith('/Spinosaurus.html')) {
+            const newPath = window.location.pathname.replace('/Spinosaurus.html', '/Spinosaurus');
+            window.history.replaceState(null, '', newPath);
+        }
+    </script>
+    <style>
+        body {
+            margin:0;
+            padding: 0;
+        }
+        #divall {
+            background: linear-gradient(135deg,#4f849b 2%, #92bdd1 65%, #4f849b 100%);
+            display: flex;
+            flex-direction: column;
+            margin: 25px;
+            border-radius: 32px;
+            box-shadow: 0 16px 56px 0 rgba(112, 177, 205, 0.24), 0 6px 20px 0 rgba(112, 177, 205, 0.16);
+            border: 2.5px solid #84c0dc;
+            position: relative;
+            overflow: hidden;
+        }
+        #divall::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 28px;
+            border: 2px solid #e0f7fa;
+            pointer-events: none;
+            z-index: 1;
+        }
+        h1 {
+            font-family: 'Bebas neue','Arial Black', sans-serif;
+            font-weight: 300;
+            font-size: 39px;
+            color: white;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+        p {
+            font-family: 'Quicksand', 'Nunito', 'Consolas', monospace;
+            font-size: 21px;
+            font-weight: 500;
+            color: white;
+            margin: 0 10px 0 20px;
+            text-shadow: 0 2px 8px rgba(112, 177, 205, 0.13);
+        }
+        #back {
+            background-color: #4f849b;
+            border: none;
+            border-radius: 12px;
+            padding: 2.5px 0 0 0;
+            box-shadow: 0 2px 8px 0 rgba(112, 177, 205, 0.13);
+        }
+        .sidebyside {
+            margin: 20px;
+            display: flex;
+            align-items: flex-start;
+            background: linear-gradient(135deg,#4f849b 2%, #72a7c0 80%, #4f849b 100%);
+            border-radius: 28px;
+            box-shadow: 0 14px 44px 0 rgba(112, 177, 205, 0.24), 0 5px 16px 0 rgba(112, 177, 205, 0.16);
+            padding: 22px 22px 22px 22px;
+            position: relative;
+            overflow: hidden;
+        }
+        .sidebyside::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 22px;
+            box-shadow: inset 0 2px 18px 0 rgba(132, 202, 232, 0.10);
+            pointer-events: none;
+            z-index: 0;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+        }
+        #img1 {
+            width: 400px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .border {
+            height: 50px;
+            width: 100%;
+            border-top:solid 2px rgb(222,222,222); 
+            border-bottom: solid 2px rgb(222, 222, 222);
+            border-bottom-style: dashed;
+            border-top-style: dashed;
+            display: flex;
+            align-items: center;
+            padding: 0 70px; 
+        }
+        h2 {
+            font-family: 'Bebas neue','Arial Black', sans-serif;
+            font-weight: 300;
+            font-size: 39px;
+            color: white;
+            letter-spacing: 3px;
+        }
+        h3 {
+            margin-left: 35px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 28px;
+            font-family: 'Bebas neue','Arial Black', sans-serif;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 3px;
+        }
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #b9e6fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        #loader img {
+            width: 1000px;
+            margin-top: -220px;
+            margin-left: -70px;
+            animation: flicker 1s infinite;
+        }
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        #house {
+            width: 50px;
+            height: 45px;
+            margin: 0 5px 0 5px;
+        }
+        @media (max-width: 1200px) {
+            #divall {
+                margin: 8px;
+            }
+            .sidebyside {
+                flex-direction: column;
+                align-items: stretch;
+                padding: 12px 6vw 12px 6vw;
+            }
+            #img1 {
+                width: 100vw;
+                max-width: 550px;
+                margin: 0 auto 18px auto;
+                display: block;
+            }
+            h1, h2 {
+                font-size: 70px;
+            }
+            h3 {
+                font-size: 50px;
+            }
+            p {
+                font-size: 27px;
+            }
+            #house {
+                width: 80px;
+                height: 75px;
+                margin: 0 auto 10px auto ;
+            }
+            #back {
+                width: 95px;
+                height: 90px;
+                margin: 0 auto 10px auto ;
+            }
+            .border {
+                height: 75px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader">
+        <img src="IMG_2115.PNG" alt="Loading..." />
+    </div>
+    
+    <div id="divall">
+        <div class="sidebyside">
+            <button id="back" onclick="history.back()"><img loading="lazy" id="house" src="https://static.vecteezy.com/system/resources/thumbnails/048/301/781/small_2x/white-abstract-house-3d-christmas-high-design-with-windows-and-roof-png.png" ></button>
+            <br>
+            <img alt="Spinosaurus skeleton" loading="lazy" id="img1" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Spinosaurus_skeleton.jpg?20131129010121">
+            <div class="column">
+                <h1>Spinosaurus</h1>
+                <p>
+                    The <i>Spinosaurus</i> is a genus of big carnivorous theropod dinosaurs that lived in the Late Cretaceous, 
+                    about 112 to 93 million years ago, in what is now the North Africa. <br>
+                    The most recent study suggests that they could have reached 14-18 meters in length, 
+                    and 5-6 meters in height. 
+                    Spinosaurus is estimated to have weighed between 6,400 and 8,000 kilograms but could reach 20,000kg. <br>
+                    Spinosaurus is known to have eaten fish, aquatic prey and small to medium terrestrial prey as well. 
+                    Evidence suggests that it was semiaquatic
+                </p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="border">
+                <h2>Species</h2>
+            </div>
+            <h3>Spinosaurus aegyptiacus</h3>
+            <p>
+                Spinosaurus aegyptiacus is the most well-known and iconic species of the Spinosaurus genus. 
+                It was first described in 1915 by German paleontologist Ernst Stromer, 
+                based on fossils discovered in the Bahariya Oasis of western Egypt. 
+                These original fossils included parts of the skull, vertebrae, and limbs, but unfortunately, 
+                they were destroyed during World War II in a bombing raid on the museum in Munich. 
+                Since then, additional fossils and discoveries from Morocco and Egypt have helped scientists better understand the creature.
+            </p>
+            <h3>Spinosaurus maroccanus</h3>
+            <p>
+                Spinosaurus maroccanus is a more controversial and lesser-known species within the Spinosauridae group. 
+                It was named in 1996 by paleontologist Dale Russell, based on vertebrae and fragmentary remains found in the Kem Kem Beds 
+                of southeastern Morocco, a region famous for its rich Cretaceous fossil deposits.<br>
+                The fossils attributed to S. maroccanus showed some differences in vertebral structure compared 
+                to S. aegyptiacus, particularly in the size and shape of the cervical (neck) vertebrae. 
+                Russell proposed that these differences were enough to distinguish a new species. 
+                However, many paleontologists remain skeptical and consider Spinosaurus maroccanus to be either a junior synonym of 
+                Spinosaurus aegyptiacus or simply too fragmentary to confirm as a separate species.
+            </p><br><br>
+            <div class="border">
+                <h2>Characteristics</h2>
+            </div>
+            <h3>Body</h3>
+            <p>
+                Spinosaurus was a highly distinctive and specialized theropod dinosaur with unique anatomical features adapted for a semi-aquatic lifestyle. 
+                Its skull was long and narrow, measuring about 1.6 meters, and resembled that of a modern crocodile. 
+                The snout housed straight, conical teeth without serrations—ideal for catching slippery prey like fish.<br><br>
+                he hands were relatively long compared to those of other spinosaurids, and the claws were only slightly curved, suggesting an adaptation for grasping rather than slashing.<br><br>
+                One of the most striking features of Spinosaurus was its elongated neural spines, 
+                which extended from its back vertebrae. 
+                These spines were over 10 times the diameter of the vertebral centra, 
+                forming a prominent sail—or possibly a hump-like structure. 
+                The shape and structure of the spines suggest they may have been tightly covered by skin 
+                rather than supported by a richly vascularized structure, much like the crest of a chameleon.<br><br>
+                Notably, it was one of the few theropods where the fourth toe made contact with the ground. 
+                Its toe bones were unusually long and strong, ending in broad, flat-bottomed claws, 
+                features likely adapted for walking on soft, muddy ground or for aiding in swimming.<br>
+                Altogether, these body features point to a dinosaur that was not just a land-based predator but one that spent much of 
+                its time in aquatic or semi-aquatic environments, hunting fish and moving comfortably both in water and on land.
+            </p>
+            <h3>Behaviour</h3>
+            <p>
+                Spinosaurus displayed a range of unique behaviors that set it apart from other large theropods. 
+                Its most iconic feature—the large sail or hump on its back—has puzzled scientists for decades. 
+                While its exact purpose remains uncertain, several possible functions have been proposed. 
+                The sail may have been used for display, to intimidate rivals, or attract mates by making 
+                the dinosaur appear larger and more imposing. It could also have played a role in thermoregulation, 
+                either absorbing heat during cooler times of the day or helping dissipate excess body heat in the warm, 
+                tropical climate of Cretaceous North Africa. By angling its sail toward or away from the sun or wind, 
+                Spinosaurus may have effectively controlled its body temperature.<br><br>
+                One of Spinosaurus’s most debated behaviors revolves around its semi-aquatic lifestyle. 
+                Its long, crocodile-like jaws, conical teeth, and elevated nostrils suggest it was well-adapted to catching fish. 
+                Initially, some paleontologists believed that Spinosaurus hunted mainly in shallow water or from the shore. 
+                However, more recent studies of its keeled tail have provided strong evidence that it could actively swim, 
+                using its tail like a paddle to propel itself through water—much like a modern crocodile or alligator. 
+                This points to a lifestyle where Spinosaurus likely spent a significant amount of time in rivers and wetlands, ambushing aquatic prey.<br><br>
+                In terms of sensory abilities, Spinosaurus probably had good vision, 
+                though not as highly developed for depth perception as predators like Tyrannosaurus rex. 
+                It was capable of short bursts of speed up to 28 km/h, but likely moved more slowly in water and on land most of the time.<br><br>
+                Socially, Spinosaurus is believed to have been a solitary animal. 
+                There’s no evidence of group nesting or coordinated behavior. 
+                It likely came together with others only during mating seasons, much like many modern reptiles.
+            </p><br><br>
+            <div class="border">
+                <h2>Classification</h2>
+            </div>
+            <h3></h3>
+            <p>
+                The Spinosaurus are carnivorous theropods from the Saurischia group and the  family Spinosauridae, which includes two subfamilies: Baryonychinae and Spinosaurinae. 
+                The Spinosaurus is in the Spinosaurinae sub-family. <br>
+                The spinosaurines share unserrated straight teeth that are widely spaced, 
+                as opposed to the baryonychines, which have serrated curved teeth that are numerous.
+            </p>
+            <br><br>
+        </div>
+    </div>
+</body>
+<script>
+    window.addEventListener("load", function () {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("divall").style.display = "flex";
+    });
+</script>
+</html>
